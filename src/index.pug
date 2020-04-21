@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='css/style.css')
+    title probando
+  body
+    include partial.menu.pug
+    main
+      include partial.landing.pug
+      include partial.legals.pug
+      include partial.plp.pug
+      include partial.pdp.pug
+      include partial.checkout.pug
+      include partial.find-in-store.pug
+    include partial.footer.pug
+    script.
+      var changeViewTo = function(viewName){
+        console.log(viewName);
+        document.querySelectorAll('article').forEach(function(element){
+          element.style.display = 'none';
+        });
+        document.querySelector('article[data-component-name="'+viewName+'"]').style.display = 'flex';
+      };
+      changeViewTo('storesView');

@@ -1,0 +1,37 @@
+nav
+	display flex
+	align-items stretch
+	height $navbar-height
+	background-color $navbar-background
+.nav-fixed
+	position fixed
+	z-index $very-top-zindex
+	top 0
+	width 100%
+	& + main
+		margin-top $navbar-height
+.nav-btn
+	height 100%
+	color white
+	padding 0 $margin-standard
+	&:hover
+		background-color lighten($navbar-background, 15%)
+	small
+		margin-left 5px
+.btn-dropdown-container:hover
+	.second-navbar
+		display flex
+.second-navbar
+	display none
+	position absolute
+	background-color #ccc
+	justify-content center
+	width 100%
+	left 0
+.second-navbar-column
+	padding 10px 50px
+.second-navbar-btn
+		display block
+	  height auto
+	  width 100%
+		padding 0

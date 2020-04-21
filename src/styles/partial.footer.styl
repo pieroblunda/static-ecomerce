@@ -1,0 +1,20 @@
+footer
+  background-color #aaa
+  color white
+  .container
+    width 60%
+    margin 0 auto
+    display flex
+    flex-wrap wrap
+    justify-content space-evenly
+  section
+    flex 0 1 auto
+    min-width: 150px
+    &[data-section-name="legal-info"]
+      background-color darken(#aaa, 15%)
+      ul 
+        display flex
+        li
+          padding 10px 15px
+          &:first-child
+            flex 1 0 auto     

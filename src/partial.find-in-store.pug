@@ -1,0 +1,70 @@
+article(data-component-name="storesView")
+  aside
+    section
+      button ← Back
+    section
+      ul.stores-list
+        li
+          h3.store-name Store name 1
+          span.city Milano
+          span.separator -
+          span.store-open Adesso aperto
+          small.distance 305m
+        li
+          h3.store-name Store name 2
+          span.city Milano
+          span.separator -
+          span.store-closed Ahora cerrado
+          small.distance 780m
+        li
+          h3.store-name Store name 3
+          span.city Bologna
+          span.separator -
+          span.store-open Adesso aperto
+          small.distance 30km
+        li
+          h3.store-name Store name 4
+          span.city Roma
+          span.separator -
+          span.store-open Adesso aperto
+          small.distance 55km
+  aside
+    section
+      button ← Back
+    section
+      h3 Find in store
+      h4.h3.store-name Store name 1
+      span.city Milano
+      span.separator -
+      span.store-open Adesso aperto
+      small.distance 305m
+    section
+      p lo store XX ha il prodotto che stai cercando. 
+      button Comprar
+    section.map
+      h3 Mappa
+      .map-container
+        img(src="img/map-placeholder.jpg" alt="" style="width:100%")
+        address
+          | Via Sant'Andrea, 5
+          br
+          | 20121 Milano, Italia
+          br
+          | +39 (027) 98928
+    section.open-ours
+      h3 Orari
+      ul
+        li Mon-Fri 9am to 10pm 
+        li Sat 10am to 14pm
+        li Sun Closed
+    section.social
+      h3 social network
+      p Icon Icon Icon Icon Icon
+    section
+      //- Si el usuario esta logueado puede reservar un producto para pasar a retirar por el local
+      p lo store XX ha il prodotto che stai cercando.
+      button Reservar
+    section
+      //- Si el usuario NO esta logueado puede completar un formulario para confirmar el retiro
+      p lo store XX ha il prodotto che stai cercando.
+      button Formulario

@@ -1,0 +1,46 @@
+[data-component-name="detailView"]
+  button
+  	cursor pointer
+  label
+  	display block
+  	font-weight bold
+  aside
+    padding 30px
+    .sticky
+      position sticky
+      top $navbar-height
+      background-color white
+  	section
+  		margin-bottom 15px
+  		&:last-child
+  			margin-bottom 0
+  		&.product-name
+  			h1
+  				font-size 35px
+  				margin 0
+  			h2
+  				font-size 35px
+  				margin 0
+  				s
+  					font-size 50%
+  					margin 0
+  					display block
+  				span
+  					&.off
+  						font-size 60%
+  						margin 0
+  						color red
+  		&.color-pallete
+  			.color-item
+  				width 40px
+  				height 40px
+  				display inline-block
+  				border-radius 4px
+  		&.size-pallete
+  			.size-item
+  				background-color transparent
+  				border 1px solid black
+  				border-radius 3px
+  				padding 2px 10px
+  				font-size 12px
+  				text-transform uppercase

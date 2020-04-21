@@ -1,0 +1,60 @@
+article(data-component-name="detailView")
+  h1.a11y Product detail Page
+  section
+    .grid
+      .col
+        h2 Product detail Page
+    ul.grid
+      each val in [0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11]
+        li.col
+          include partial.product-component-1.pug
+  aside
+    header.sticky
+      section.breadcrumb(aria-label="Accessibility placeholder")
+        | Category &gt; Subcategory &gt; Item class
+      section.product-name
+        h2 Product title
+        h3
+          s 10.000&euro;
+          |       6.000&euro;
+          span.off 40% OFF
+      section(aria-label="Accessibility placeholder")
+        button.primary(type="button" name='button') Buy
+        button.secondary(type="button" name='button') &#x2764;&#xFE0E;
+        button.secondary(type="button" name='button') Find in store
+        button.secondary(type="button" name='button') Share
+    section.description(aria-label="Accessibility placeholder")
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    section.color-pallete(aria-label="Accessibility placeholder")
+      label Available colors
+      .color-item(style='background-color:red;')
+      .color-item(style='background-color:green;')
+      .color-item(style='background-color:blue;')
+      .color-item(style='background-color:pink;')
+      .color-item(style='background-color:orange;')
+      .color-item(style='background-color:white;')
+      .color-item(style='background-color:black;')
+      .color-item(style='background-color:lightblue;')
+    section.size-pallete(aria-label="Accessibility placeholder")
+      label Available sizes
+      button.size-item 33
+      button.size-item 34
+      button.size-item 35
+      button.size-item 36
+      button.size-item 37
+      button.size-item 38
+      button.size-item 39
+      button.size-item 40
+      button.size-item 41
+      button.size-item 42
+      button.size-item 43
+      button.size-item 44
+      br
+      button.size-item XS
+      button.size-item S
+      button.size-item M
+      button.size-item L
+      button.size-item XL
+      button.size-item XXL
+      button.size-item XXXL

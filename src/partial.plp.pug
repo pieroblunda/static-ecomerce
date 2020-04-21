@@ -1,0 +1,25 @@
+article.grid-nogutter(data-component-name="listView")
+  h1.a11y List Product Page
+  aside.filters
+    h2 Filtra per
+    h3 Colore
+    p Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+    h3 Prezzo
+    //- https://refreshless.com/nouislider/
+    p Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+    h3 Colezioni
+    label
+      input(type="checkbox")
+      | Opzione A
+    label
+      input(type="checkbox")
+      | Opzione B
+    label
+      input(type="checkbox")
+      | Opzione C
+  section.product-list(aria-label="Accessibility placeholder")
+    h2 List Product Page
+    ul.grid
+      each val in [0,1,2,3,4,5,6,7,8,9,10,11]
+        li.col
+          include partial.product-component-1.pug
